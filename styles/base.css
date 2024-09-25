@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
 	text-align: center;
 }
 
+h2 {
+	font-size: large;
+}
+
 header, footer {
 	background-color: #164e70;
 	color: #fff;
