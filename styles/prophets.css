@@ -1,0 +1,24 @@
+header {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+}
+
+#cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	max-width: 1024px;
+	gap: 1rem;
+}
+
+#cards section {
+	align-items: center;
+	border-bottom: 1px solid #b6b6b6;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 1rem;
+}

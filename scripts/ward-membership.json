@@ -1,0 +1,23 @@
+{
+  "family_name": "Madroñero",
+  "move_in_date": "2024-03-01",
+  "number_of_people": 3,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Brian Madroñero",
+      "gender": "Male",
+      "birthdate": "1997-01-14"
+    },
+    {
+      "name": "Eduardo Madroñero",
+      "gender": "Male",
+      "birthdate": "1951-04-06"
+    },
+    {
+      "name": "Miladis Silvera",
+      "gender": "Female",
+      "birthdate": "1959-04-28"
+    }
+  ]
+}
