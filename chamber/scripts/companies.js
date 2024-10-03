@@ -38,7 +38,7 @@ async function getPremiumCompanies() {
 	let companies = []
 	
 	try {
-		const res = await fetch('/chamber/data/members.json')
+		const res = await fetch('/wdd231/chamber/data/members.json')
 		if (res.ok) {
 			companies = await res.json()
 			companies = companies.filter(company => company.membership > 1)
