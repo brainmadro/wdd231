@@ -1,7 +1,3 @@
-async function getCompanies() {
-	
-}
-
 function createBusinessCard(company) {
 	const memberships = [null, 'member', 'silver', 'gold']
 	
@@ -17,9 +13,9 @@ function createBusinessCard(company) {
 	
 	$title.innerHTML = `<h2>${company.name}</h2><h3>${memberships[company.membership]}</h3>`
 	$details.innerHTML = `
-		<span><strong>ADDRESS:</strong>${company.address}</span>
-		<span><strong>PHONE:</strong>${company.phone}</span>
-		<span><strong>LINK:</strong>${company.website}</span>`
+		<span>${company.address}</span>
+		<span>${company.phone}</span>
+		<span>${company.website}</span>`
 
 	$card.classList.add('company-card')
 	$title.classList.add('company-card-title')
@@ -50,8 +46,23 @@ async function getPremiumCompanies() {
 	return companies
 }
 
+async function getAllCompanies() {
+	let companies = []
+	
+	try {
+		const res = await fetch('/wdd231/chamber/data/members.json')
+		if (res.ok) {
+			companies = await res.json()
+		}
+	} catch (err) {
+		console.error(err);
+	}
+
+	return companies
+}
+
 export { 
-	getCompanies,
+	getAllCompanies,
 	createBusinessCard,
 	getPremiumCompanies
 }
