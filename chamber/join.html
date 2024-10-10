@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 231 - Brian Madroñero Student project"/>
+    <meta name="author" content="Brian Madroñero" />
+    <meta property="og:title" content="Brian Madroñero WDD231 Website">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://bogota.gov.co/sites/default/files/styles/1050px/public/2023-08/bogota_5.jpeg">
+    <meta property="og:url" content="https://brainmadro.github.io/wdd231/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans+Mono:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles/variables.css">
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/join.css">
+    <link rel="icon" href="favicon.ico">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+		<script src="scripts/join.js" type="module"></script>
+    <title>Join | Bogotá DC Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+			<div>
+				<img src="images/large-logo1024x336.png" alt="Logo camara de comercio de Bogotá">
+				<div class="logo-title">
+					<h1>Bogotá<br/>Colombia</h1>
+					<h4>Chamber of Commerce</h4>
+				</div>
+			</div>
+      <button id="menu"></button>
+      <nav>
+        <a href="/wdd231/chamber">Home</a>
+        <a href="/wdd231/chamber">Discover</a>
+        <a href="/wdd231/chamber/directory">Directory</a>
+        <a href="/wdd231/chamber/join" class="active">Join</a>
+      </nav>
+    </header>
+    <main>
+			<section>
+				<form action="/wdd231/chamber/thankyou.html" method="get">
+					<div class="application-data-container">
+						<label for="application_first_name">First Name:
+							<input type="text" required="required" name="application_first_name" id="application_first_name" title="Representative First Name" autocomplete="given-name">
+						</label>
+				
+						<label for="application_last_name">Last Name:
+							<input type="text" required="required" name="application_last_name" id="application_last_name" title="Representative Last Name" autocomplete="family-name">
+						</label>
+				
+						<label for="application_organizational_title">Organizational Title:
+							<input type="text" required="required" name="application_organizational_title" id="application_organizational_title" title="Organizational Title" autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$">
+						</label>
+				
+						<label for="application_email_address">Email Address:
+							<input type="email" required="required" name="application_email_address" id="application_email_address" title="Email Address" autocomplete="email " placeholder="e@xample.com">
+						</label>
+				
+						<label for="application_mobile_phone">Mobile Phone Number:
+							<input type="tel" required="required" name="application_mobile_phone" id="application_mobile_phone" title="Mobile Phone Number" autocomplete="tel">
+						</label>
+				
+						<label for="application_business_name">Business/Organization Name:
+							<input type="text" required="required" name="application_business_name" id="application_business_name" title="Business/Organization Name" autocomplete="organization">
+						</label>
+				
+						<label for="application_membership_level">Membership Level:
+							<select name="application_membership_level" id="application_membership_level">
+									<option value="-- Select an option --" selected disabled>-- Select an option --</option>
+									<option value="0">Non-Profit Membership</option>
+									<option value="1">Bronze Membership</option>
+									<option value="2">Silver Membership</option>
+									<option value="3">Gold Membership</option>
+							</select>
+						</label>
+				
+						<label for="application_description">Description:
+							<textarea name="application_description" id="application_description" title="Description"></textarea>
+						</label>
+				
+						<input type="hidden" name="application_timestamp" id="application_timestamp">
+					</div>			
+					<input type="submit" value="Send Application">
+			</form>
+			</section>		
+    </main>
+    <footer>
+      <p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera | Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

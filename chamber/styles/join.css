@@ -1,0 +1,10 @@
+form, form .application-data-container {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+form .application-data-container {
+	align-items: flex-start;
+}
