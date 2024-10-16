@@ -1,0 +1,33 @@
+.membership-card {
+	border-radius: 6px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+	font-weight: 600;
+	margin: 1em auto;
+	width: fit-content;
+	padding: 1em;
+}
+
+.membership-card.gold {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle at top left,  rgba(241,207,96,.7) 0%, rgba(255,255,255,1) 60%);
+}
+
+.membership-card.silver {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle at top left,  rgba(138, 162, 173, 0.7) 0%, rgba(255,255,255,1) 60%);
+}
+
+.membership-card.bronze {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle at top left,  rgba(241, 154, 96, 0.7) 0%, rgba(255,255,255,1) 60%);
+}
+
+.membership-card a {
+	color: var(--red-bg-color);
+	font-size: .8em;
+	font-weight: 400;
+}
+
+.membership-card a:hover {
+	cursor: pointer;
+}

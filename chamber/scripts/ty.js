@@ -12,4 +12,21 @@ const application = {
 	timestamp: params.get("application_timestamp")
 }
 
-console.log(application);
+Object.keys(application).forEach(key => {
+	const element = document.querySelector(`#${key}`)
+
+	if (key == 'timestamp') {		
+		element.textContent = new Date(Number(application[key])).toLocaleString('en-US', {
+			year: 'numeric',
+			month: 'long',
+			day: 'numeric',
+			hour: '2-digit',
+			minute: '2-digit',
+			second: '2-digit',
+			timeZoneName: 'short'
+		});
+		return
+	}
+
+	element.textContent = application[key]
+})
