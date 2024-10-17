@@ -136,6 +136,7 @@ picture  {
 #menu {
 	background: none;
 	border: 0;
+	box-shadow: none;
 	display: none;
 	color: var(--darkest-bg-color);
 	font-size: 1.5rem;
