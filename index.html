@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 231 - Brian Madroñero Student project"/>
+    <meta name="author" content="Brian Madroñero" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+		<link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <title>WDD 231 - Brian Madroñero Student project</title>
+  </head>
+  <body>
+    <header>
+			<div class="title-container">
+				<span class="title">
+					<svg width="1em" height="1em" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+						<path d="M8.01005 0.858582L6.01005 14.8586L7.98995 15.1414L9.98995 1.14142L8.01005 0.858582Z" fill="#000000"/>
+						<path d="M12.5 11.5L11.0858 10.0858L13.1716 8L11.0858 5.91422L12.5 4.5L16 8L12.5 11.5Z" fill="#000000"/>
+						<path d="M2.82843 8L4.91421 10.0858L3.5 11.5L0 8L3.5 4.5L4.91421 5.91422L2.82843 8Z" fill="#000000"/>
+					</svg>
+					Brian Madroñero
+				</span>
+			</div>
+			<button id="menu"></button>
+      <nav>
+				<a href="#" class="active">Home</a>
+        <a href="#">Chamber</a>
+				<a href="#">Final</a>
+      </nav>
+    </header>
+    <main>
+			<h1>Home</h1>
+			<div class="content">
+				<section class="card">
+					<h2 class="card-title">About Me</h2>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, sequi? Aliquid natus in qui molestiae, deserunt alias sint doloremque modi beatae, dignissimos at quas minima culpa dolores ab, ea est!
+					</p>
+				</section>
+				<section class="card">
+					<h2 class="card-title">Student Photo</h2>
+					<picture>
+						<img src="https://bogota.gov.co/sites/default/files/styles/1050px/public/2023-08/bogota_5.jpeg" alt="Ciudad Bogota">
+					</picture>
+				</section>
+				<section class="card">
+					<h2 class="card-title">Web Certificate Courses</h2>
+					<div class="certificate_filters">
+						<label for="all_filter">
+							<button id="all_filter" data-filter="all">All</button>
+						</label>
+						<label for="cse_filter">
+							<button id="cse_filter" data-filter="cse">CSE</button>
+						</label>
+						<label for="wdd_filter">
+							<button id="wdd_filter" data-filter="wdd">WDD</button>
+						</label>
+					</div>
+					<div class="certificate_cards"></div>
+					<p>Total credits required: <span id="total_credits"></span></p>
+				</section>
+			</div>
+    </main>
+    <footer>
+			<div class="social-media">
+        <a href="https://github.com/brainmadro">
+					<img src="images/github.png" alt="GitHub Icon">
+				</a>
+        <a href="https://www.linkedin.com/in/brianmadronero/">
+					<img src="images/linkedin.png" alt="LinkedIn Icon">
+				</a>
+				<a href="https://www.instagram.com/brainmadro/">
+					<img src="images/instagram.png" alt="Instagram Icon">
+				</a>
+			</div>
+      <p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera | Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>
