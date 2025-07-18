@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="WDD 231 - Brian Madroñero Student project"/>
+    <meta name="author" content="Brian Madroñero" />
+		<meta property="og:title" content="Brian Madroñero WDD231 Website">
+    <meta property="og:description" content="A website made as excercise for WDD231 BYU course">
+    <meta property="og:image" content="images/main-logo.png">
+    <meta property="og:url" content="https://brainmadro.github.io/wdd231/chamber">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
+    <link rel="stylesheet" href="styles/variables.css">
+		<link rel="stylesheet" href="styles/base.css">
+		<link rel="stylesheet" href="styles/home.css">
+		<link rel="icon" href="favicon.ico">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
+    <title>Home | Bogotá DC Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+			<div>
+				<img src="images/large-logo1024x336.png" alt="Logo camara de comercio de Bogotá">
+				<div class="logo-title">
+					<h1>Bogotá<br/>Colombia</h1>
+					<h4>Chamber of Commerce</h4>
+				</div>
+			</div>
+      <button id="menu"></button>
+      <nav>
+        <a href="/chamber" class="active">Home</a>
+        <a href="/chamber">Discover</a>
+        <a href="/chamber/directory">Directory</a>
+        <a href="/chamber">Join</a>
+      </nav>
+    </header>
+    <main>
+			<section class="hero">
+				<img src="images/hero-1440X500.webp" alt="Hero image of coffee colombian merchant" class="hero-image">
+				<div class="hero-overlay">
+					<a href="#s" class="hero-cta">JOIN US</a>
+				</div>
+			</section>
+      <section class="weather-container">
+        <div class="weather-card">
+					<h3>Events</h3>
+          <div class="weather-card-content"></div>
+        </div>
+				<div class="weather-card">
+					<h3>Current Weather</h3>
+          <div class="weather-card-content current">
+						<img id="weather-icon" src="" alt="weather icon">
+						<p id="weather-detail">F°</p>
+					</div>
+        </div>
+				<div class="weather-card">
+					<h3>Weather Forecast</h3>
+          <div class="weather-card-content forecast">
+						<span id="todays-temp"></span>
+						<span id="tomorrows-temp"></span>
+						<span id="next-day-temp"></span>
+					</div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>©<span id="currentyear"></span> Brian Moroni Madroñero Silvera | Colombia</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

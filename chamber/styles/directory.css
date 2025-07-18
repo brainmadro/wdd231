@@ -1,0 +1,34 @@
+.companies-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.companies-container.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+}
+
+.companies-container > * {
+	width: 100%;
+}
+
+.section-header {
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+	max-width: 1440px;
+	width: 84%;
+}
+
+@media (max-width: 37.5em) {
+	.companies-container.grid {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.section-header {
+		display: none;
+	}
+}

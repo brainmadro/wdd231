@@ -1,0 +1,58 @@
+[
+	{
+		"name": "Ecopetrol SA",
+		"address": "Cr. 13 No. 36 - 24, Bogotá, Colombia",
+		"phone": "+57 310 3158600",
+		"website": "https://www.ecopetrol.com.co/wps/portal/",
+		"icon": "https://www.ecopetrol.com.co/wps/contenthandler/dav/themelist/eco-tema-principal1/images/EcopetrolLogoFooter.svg",
+		"membership": 3
+	},
+	{
+		"name": "Alpina",
+		"address": "Km 3, vía Briceño Sopó, Edificio Administrativo Alpina  Cundinamarca, Colombia",
+		"phone": "+57 316 2442018",
+		"website": "https://alpina.com/",
+		"icon": "https://alpina.com/media/logo/stores/33/Grupo_214260_2x.png",
+		"membership": 3
+	},
+	{
+		"name": "Terpel",
+		"address": "Carrera 7 No. 75 - 51, Bogotá, Colombia",
+		"phone": "PBX (+57-1) 326 7878",
+		"website": "https://www.terpel.com/",
+		"icon": "https://portalcolombia.terpel.com/static/images/logo-terpel-rojo.svg",
+		"membership": 2
+	},
+	{
+		"name": "Drummond LTD",
+		"address": "Calle 72 No. 10-07 Oficina 1302, Bogotá, Colombia",
+		"phone": "PBX (+57-1) 587 1000",
+		"website": "https://www.drummondltd.com/",
+		"icon": "https://www.drummondltd.com/wp-content/uploads/2022/04/logo-drummond-ldt.png",
+		"membership": 1
+	},
+	{
+		"name": "Tiendas D1",
+		"address": "Cra. 36 #4 - 28, Bogotá, Colombia",
+		"phone": "01 8000 120201",
+		"website": "https://d1.com.co/",
+		"icon": "https://upload.wikimedia.org/wikipedia/commons/4/4e/LOGOTIPO_D1_2021.png",
+		"membership": 1
+	},
+	{
+		"name": "Alkosto SA",
+		"address": "Avenida 68 # 72 - 43, Bogotá, Colombia",
+		"phone": "(601) 4073033",
+		"website": "https://www.alkosto.com/",
+		"icon": "https://www.alkosto.com/medias/alkosto-logo.svg?context=bWFzdGVyfGltYWdlc3wxMjMxMnxpbWFnZS9zdmcreG1sfGFXMWhaMlZ6TDJnMllTOW9NMlV2T1RrNU1URXhNREEyTmpJd05pNXpkbWN8OGRhMGMwM2M1M2FmNjk1MTRhODkzZjQ3NmI4OTU2N2Y1MTg5NmJlYWUxMTU5Njc1NmVkZjgxYzRlY2M0YjQ0Yw",
+		"membership": 3
+	},
+	{
+		"name": "Compensar",
+		"address": "Avenida 68 # 49A - 47, Bogotá, Colombia",
+		"phone": "(601) 4441234",
+		"website": "https://corporativo.compensar.com/",
+		"icon": "https://corporativo.compensar.com/PublishingImages/logo_compensar.png",
+		"membership": 2
+	}	
+]
