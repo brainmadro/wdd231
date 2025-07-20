@@ -24,10 +24,10 @@ main section:first-child {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 1em;
+}
 
-	& > * {
-		width: 100%;
-	}
+.spotlights-companies > * {
+	width: 100%;
 }
 
 .weather-card-content {
