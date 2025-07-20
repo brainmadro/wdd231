@@ -6,7 +6,7 @@ const $nextDayTemp = document.querySelector('#next-day-temp')
 const $weatherDetail = document.querySelector('#weather-detail')
 
 const url = `https://api.openweathermap.org/data/2.5/`
-const API_KEY = '25d27aefb9cc703822d9c3a4dd3ac24f' //API KEY
+const API_KEY = '25d27aefb9cc703822d9c3a4dd3ac24f'
 
 async function getWeather() {
 	try {
@@ -53,8 +53,8 @@ async function displayResults() {
 		) ? [...acc, cur] : [...acc]
 	}, [forecastData.list[0]])
 	
-	$tomorrowsTemp.innerHTML = `${weekDays[new Date(forecastData.list[0].dt * 1000).getDay()]}: <b>${Math.round(forecastData.list[0].main.temp)}C°</b>`
-	$nextDayTemp.innerHTML = `${weekDays[new Date(forecastData.list[1].dt * 1000).getDay()]}: <b>${Math.round(forecastData.list[1].main.temp)}C°</b>`
+	$tomorrowsTemp.innerHTML = `${weekDays[(new Date().getDay() + 1) % 7]}: <b>${Math.round(forecastData.list[0].main.temp)}C°</b>`
+	$nextDayTemp.innerHTML = `${weekDays[(new Date().getDay() + 2) % 7]}: <b>${Math.round(forecastData.list[1].main.temp)}C°</b>`
 	$todaysTemp.innerHTML =  `Today: <b>${Math.round(weatherData.main.temp)}C°</b>`
 	$weatherIcon.setAttribute('src', `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`)
 	$weatherIcon.setAttribute('alt', `Weather Icon`)

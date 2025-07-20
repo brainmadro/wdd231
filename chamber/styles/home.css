@@ -20,6 +20,16 @@ main section:first-child {
 	right: 20px;
 }
 
+.spotlights-companies {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1em;
+
+	& > * {
+		width: 100%;
+	}
+}
+
 .weather-card-content {
 	padding: .7em .5em;
 }
@@ -62,6 +72,11 @@ main section:first-child {
 }
 
 @media (max-width: 37.5em) {
+	.spotlights-companies {
+		display: flex;
+		flex-direction: column;
+	}
+
 	.weather-container {
 		display: flex;
 		flex-direction: column;

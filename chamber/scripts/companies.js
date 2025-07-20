@@ -45,7 +45,24 @@ async function getAllCompanies() {
 	return companies
 }
 
+async function getPremiumCompanies() {
+	let companies = []
+	
+	try {
+		const res = await fetch('/wdd231/chamber/data/members.json')
+		if (res.ok) {
+			companies = await res.json()
+			companies = companies.filter(company => company.membership > 1)
+		}
+	} catch (err) {
+		console.error(err);
+	}
+
+	return companies
+}
+
 export { 
 	getAllCompanies,
-	createBusinessCard
+	createBusinessCard,
+	getPremiumCompanies
 }
