@@ -71,6 +71,7 @@ const $hamButton = document.querySelector('#menu');
 const $navigation = document.querySelector('header nav');
 const $certificateCards = document.querySelector(".certificate_cards");
 const $filters = document.querySelectorAll(".certificate_filters button");
+const $dialog = document.querySelector("dialog");
 
 $hamButton.addEventListener('click', () => {
 	$navigation.classList.toggle('open');
@@ -84,6 +85,9 @@ courses = courses.map((course) => {
   if (course.completed) $container.classList.add("completed");
 	
   $container.textContent = `${course.subject} ${course.number}: C${course.credits}`;
+  $container.addEventListener('click', () => {
+    displayModal(course)
+  })
 	
   return {
 		...course,
@@ -120,4 +124,24 @@ function getCreditsRequired(courses) {
 	}, 0)
 	
 	document.querySelector('#total_credits').textContent = creditsRequired
+}
+
+function displayModal(course) {
+  $dialog.innerHTML = '';
+  $dialog.innerHTML = `
+    <div class="header">
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+    </div>
+    <p><strong>Credits</strong>: ${course.credits}</p>
+    <p><strong>Certificate</strong>: ${course.certificate}</p>
+    <p>${course.description}</p>
+    <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+  `;
+  $dialog.showModal();
+  
+  closeModal.addEventListener("click", () => {
+    $dialog.close();
+  });
 }

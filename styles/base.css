@@ -24,6 +24,40 @@ body {
   font-style: normal;
 }
 
+dialog {
+  background-color: #fff;
+  border: 1px solid rgb(0 0 0 / 10%);
+  border-radius: .25rem;
+  box-shadow: 0 0 3rem #777;
+  margin: auto;
+  max-width: 600px;
+  padding: 1rem;
+  width: 90%;
+
+  & button {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: .5rem 1rem;
+    position: absolute;
+    right: 23px;
+    top: 23px;
+  }
+
+  & p {
+    margin: 1rem 0;
+  }
+
+  & .header {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: .3em;
+  }
+}
+
+dialog::backdrop {
+  background-color: #49516f6b;
+  filter: blur();
+}
+
 h1,
 h2,
 h3,
