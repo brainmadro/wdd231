@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WDD 231 - Brian Madroñero Student project"
+    />
+    <meta name="author" content="Brian Madroñero" />
+    <meta property="og:title" content="Brian Madroñero WDD231 Website" />
+    <meta
+      property="og:description"
+      content="A website made as excercise for WDD231 BYU course"
+    />
+    <meta property="og:image" content="images/main-logo.png" />
+    <meta
+      property="og:url"
+      content="https://brainmadro.github.io/wdd231/chamber"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/ty.css" />
+    <link rel="icon" href="favicon.ico" />
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script type="module" src="scripts/ty.js"></script>
+
+    <title>New Member | Bogotá DC Chamber of Commerce</title>
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="/wdd231/chamber">
+          <img
+            src="images/large-logo1024x336.png"
+            alt="Logo camara de comercio de Bogotá"
+          />
+          <div class="logo-title">
+            <h1>Bogotá<br />Colombia</h1>
+            <h4>Chamber of Commerce</h4>
+          </div>
+        </a>
+      </div>
+      <button id="menu"></button>
+      <nav>
+        <a href="/wdd231/chamber">Home</a>
+        <a href="/wdd231/chamber/discover">Discover</a>
+        <a href="/wdd231/chamber/directory">Directory</a>
+        <a href="/wdd231/chamber/join" class="active">Join</a>
+      </nav>
+    </header>
+		<main>
+      <section>
+				<p>
+					🎉 Thank you for submitting your application to the Chamber of Commerce. 
+					We appreciate your interest and will review your information shortly. 
+					If any additional details are needed, we will be in touch. 🎉
+				</p>
+        <dl>
+          <dt>First Name</dt>
+          <dd id="firstName"></dd>
+          <dt>Last Name</dt>
+          <dd id="lastName"></dd>
+          <dt>Organizational Title</dt>
+          <dd id="organizationalTitle"></dd>
+          <dt>Email Address</dt>
+          <dd id="emailAddress"></dd>
+          <dt>Mobile Phone</dt>
+          <dd id="mobilePhone"></dd>
+          <dt>Business Name</dt>
+          <dd id="businessName"></dd>
+          <dt>Membership Level</dt>
+          <dd id="membershipLevel"></dd>
+          <dt>Description</dt>
+          <dd id="description"></dd>
+          <dt>Sent at</dt>
+          <dd id="timestamp"></dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      <p>
+        ©<span id="currentyear"></span> Brian Moroni Madroñero Silvera |
+        Colombia
+      </p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

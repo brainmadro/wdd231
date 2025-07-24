@@ -1,0 +1,22 @@
+dl {
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px auto;	
+  padding: 15px;
+	width: fit-content;
+}
+
+dt {
+  color: #333;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+dd {
+	color: #555;
+  margin-left: 20px;
+}
+
+p {
+	text-align: center;
+}
