@@ -77,6 +77,10 @@ header > div {
 	display: flex;
 	margin: .8em;
 	gap: .4em;
+
+	& a {
+		display: flex;
+	}
 }
 
 header h1 {
